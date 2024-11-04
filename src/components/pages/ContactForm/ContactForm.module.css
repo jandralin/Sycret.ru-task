@@ -1,0 +1,176 @@
+.container {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family:'Trebuchet MS',  Arial, sans-serif;
+}
+
+.form {
+	width: 600px;
+	height: 580px;
+	list-style-type: none; 
+  padding: 30px; 
+  border-radius: 15px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+	background-color: #EBEBDF;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.formItem{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.formItem:not(:first-child) {
+	margin-top: 20px;
+}
+
+.itemInput {
+	padding: 5px 16px;
+	font-size: 15px;
+	width: 300px;
+	border: none;
+	outline: none;
+}
+
+.formCheckbox {
+	margin-top: 20px;
+	display: flex;
+	justify-content: row;
+	align-items: center;
+}
+
+.checkboxLabel {
+margin-left: 30px;
+}
+
+.checkboxInput {
+	margin-left: 10px;
+	height: 20px;
+	width: 20px;
+}
+
+.messageInput {
+	font-family:'Trebuchet MS',  Arial, sans-serif;
+	height: 80px;
+	resize: none; 
+	overflow-y: auto; 
+	outline: none;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 25px;
+	text-align: center;
+}
+
+.btn {
+	height: 40px;
+	width: 150px;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition:  background-color 0.3s;
+}
+
+.btnSubmit {
+	margin: 0 auto;
+	background-color: #EA631B;
+}
+
+.btnSubmit:disabled {
+	background-color: #ea631b69;
+}
+
+.btnSubmit:not(:disabled):hover {
+  background-color: #bd1b1b; 
+}
+
+.btnBack {
+	margin-top: 20px;
+	background-color: #ea1bc8;
+}
+
+.btnBack:disabled {
+	background-color: #ea631b69;
+}
+
+.btnBack:not(:disabled):hover {
+  background-color: #a21bbd; 
+}
+
+.errorMessage {
+	margin-top: 2px;
+	font-size: 12px;
+	margin-left: 270px;
+	color: #bd1b1b;
+}
+
+
+
+@media (max-width: 820px) {
+	.container {
+		margin-top: 30px;
+	}
+	.form {
+		padding: 20px; 
+	}
+
+	.itemInput {
+		max-width: 100%; 
+	}
+
+	.btn {
+		width: 90%; 
+	}
+	
+	.errorMessage {
+		margin-left: 100px;
+		text-align: center; 
+	}
+}
+
+
+@media (max-width: 640px) {
+	.container {
+		padding: 10px; 
+	}
+
+	.form {
+		width: 90%; 
+		height: 650px;
+	}
+
+	h2 {
+		font-size: 22px; 
+	}
+
+	.itemInput {
+		font-size: 14px; 
+	}
+
+	.formItem{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.errorMessage {
+		margin-left: 0; 
+}
+}

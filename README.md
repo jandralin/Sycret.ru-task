@@ -33,13 +33,13 @@
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone [https://github.com/ваш_пользователь/ваш_репозиторий.git](https://github.com/jandralin/Sycret.ru-task.git)
+   git clone https://github.com/jandralin/Sycret.ru-task.git
    
 2. **Установите зависимости:**
    ```bash
    npm install
 ### Деплой
-  Можете посмотреть работу на [https://jandralin.github.io/Sycret.ru-task/] (https://jandralin.github.io/Sycret.ru-task/)
+  Можете посмотреть работу на https://jandralin.github.io/Sycret.ru-task/
   
    
    

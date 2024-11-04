@@ -1,1 +1,0 @@
-# Sycret.ru-task

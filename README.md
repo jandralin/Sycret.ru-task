@@ -38,6 +38,9 @@
 2. **Установите зависимости:**
    ```bash
    npm install
+3. **Запуск:**
+   ```bash
+   npm start
 ### Деплой
   Можете посмотреть работу на https://jandralin.github.io/Sycret.ru-task/
   

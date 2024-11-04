@@ -48,9 +48,6 @@ export class Api {
 		const url = `${this._url}/OSSale?ApiKey=${apiKey}&MethodName=${method}&Id=${Id}&TableName=${TableName}&PrimaryKey=${PrimaryKey}&Price=${Price}&Summa=${Summa}&ClientName=${ClientName}&Phone=${Phone}&Email=${Email}&PaymentTypeId=${PaymentTypeId}&UseDelivery=${UseDelivery}&DeliveryAddress=${DeliveryAddress}&IsGift=${IsGift}&MsgText=${MsgText}&PName=${IsGift}&PPhone=${IsGift}`;
     try {
       const response = await axios.post(url, {
-        ApiKey: apiKey,
-        MethodName: method,
-        ...params
       }, {
         headers: {
           ...this._headers,
